@@ -4,45 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <div class="weather-app">
-        <div class="weather-app__header">
-            <div class="weather-app__logo">
-                <img src="" alt="">
-            </div>
+        <div class="weathers-app__header">
             <div class="weather-app__search">
+                <div class="weather-app__heading-logo">
+                <div class="weather-app__logo">
+                    <img src="./img/clear-cloudy.svg" alt="">
+                </div>
                 <div class="weather-app__text">
                     <h1 class="weather-app__main-heading title">Weather Forcast</h1>
-                    <p class="weather-app__body body-copy">Date</p>
+                    <p class="weather-app__body body--copy">Sunday 14, February</p>
                 </div>
+            </div>
             <div class="weather-app__input">
                     <input type="text" name="weather-app__input" id="weather-app__input" placeholder="Search...">
                     <button class="weather-app__btn btn">Search</button>
             </div>
         </div>
     </div>
-    <div class="weather-app__results">
-        <div class="weather-app__results__hero">
-            <h2 class="weather-app__results__place">London</h2>
-            <p class="weather-app__results__subtitle">England</p>
-            <p class="weather-app__results__temp">32</p>
+    <div class="weather-app__results hidden">
+            <div class="weather-app__results__hero">
+                <div class="weather-app__results__hero__text">
+                <h2 class="weather-app__results__place title"></h2>
+                <p class="weather-app__results__subtitle body--copy"></p>
+                <p class="weather-app__results__country">England</p>
+                <p class="weather-app__results__temp">32°</p>
+            </div>
         </div>
         <div class="weather-app__results__navigation">
             <div class="weather-app__results__view-type">
-                <h2 class="weather-app__results__view-type title selected">Today</h2>
-                <h2 class="weather-app__results__view-type title">Weekly</h2>                
+                <h2 class="weather-app__results__view-type title">Next Seven Days</h2>                
             </div>
             <div class="weather-app__results__temp-type">
                 <div class="weather-app__results__temp-type__C selected">
-                    <p class="weather-app__results__temp-type__copy"></p>
+                    <p class="weather-app__results__temp-type__copy">°C</p>
                 </div>
                 <div class="weather-app__results__temp-type__F">
-                    <p class="weather-app__results__temp-type__copy"></p>
+                    <p class="weather-app__results__temp-type__copy">°F</p>
                 </div>
+            </div>
+        </div>
+        <div class="weather-app__results__cards">
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+            <div class="weather-app__results__card">
+                <h2 class="weather-app__results__card__title title--medium">Saturday</h2>
+                <p class="weather-app__results__card__subtitle">Partly Cloudy</p>
+                <img src="" alt="" srcset="">
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__info">Partly Cloudy</p>
+                <p class="weather-app__results__card__temp">32°</p>
+            </div>
+        </div>
+        <div class="weather-app__results__highlights">
+            <h2 class="weather-app__results__hightlights__title title">Todays Highlight</h2>
+        </div>
+        <div class="weather-app__results__highlights__boxes">
+            <div class="weather-app__results__highlights__boxes__sunrise-sunset">
+                <div class="weather-app__results__highlights__boxes__sunrise-sunset__text">
+                    <h2 class="weather-app__results__highlights__boxes__sunrise-sunset__title title--medium">Sunrise & Sunset</h2>
+                </div>
+                <div class="weather-app__results__highlights__boxes__sunrise-sunset__icons">
+                    <h3 class="weather-app__results__highlights__boxes__sunrise-sunset__icon__text">5:50AM</h3>
+                    <h3 class="weather-app__results__highlights__boxes__sunrise-sunset__icon__text">5:50AM</h3>
+                </div>
+            </div>
+            <div class="weather-app__results__highlights__quote-of-the-day">
+                <h2 class="weather-app__results__highlights__quote-of-the-day title--medium">Quote of the day!</h2>
+                <p class="weather-app__results__highlights__quote-of-the-day body--copy">Quote</p>
             </div>
         </div>
     </div>
