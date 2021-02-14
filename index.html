@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="weather-app">
+        <div class="weather-app__header">
+            <div class="weather-app__logo">
+                <img src="" alt="">
+            </div>
+            <div class="weather-app__search">
+                <div class="weather-app__text">
+                    <h1 class="weather-app__main-heading title">Weather Forcast</h1>
+                    <p class="weather-app__body body-copy">Date</p>
+                </div>
+            <div class="weather-app__input">
+                    <input type="text" name="weather-app__input" id="weather-app__input" placeholder="Search...">
+                    <button class="weather-app__btn btn">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="weather-app__results">
+        <div class="weather-app__results__hero">
+            <h2 class="weather-app__results__place">London</h2>
+            <p class="weather-app__results__subtitle">England</p>
+            <p class="weather-app__results__temp">32</p>
+        </div>
+        <div class="weather-app__results__navigation">
+            <div class="weather-app__results__view-type">
+                <h2 class="weather-app__results__view-type title selected">Today</h2>
+                <h2 class="weather-app__results__view-type title">Weekly</h2>                
+            </div>
+            <div class="weather-app__results__temp-type">
+                <div class="weather-app__results__temp-type__C selected">
+                    <p class="weather-app__results__temp-type__copy"></p>
+                </div>
+                <div class="weather-app__results__temp-type__F">
+                    <p class="weather-app__results__temp-type__copy"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
