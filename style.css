@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+
 * {
 	font-family: 'Source Sans Pro';
 	margin: 0;
@@ -79,7 +83,7 @@
 	background-image: url('./img/sunny.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 200px;
+	height: 300px;
 	width: 90%;
 	border-radius: 20px;
 }
@@ -161,20 +165,42 @@
 	align-items: center;
 	border-radius: 100px;
 	margin: 10px;
+	cursor: pointer;
 }
 
 .weather-app__results__temp-type__C:hover {
 	background-color: #ef5e5e;
-	transition: 0.5s;
+	transition: 0.35s;
 	color: white;
 }
 
 .weather-app__results__temp-type__F:hover {
 	background-color: #ef5e5e;
-	transition: 0.5s;
+	transition: 0.35s;
 	color: white;
 }
 
 .hidden {
 	display: none;
+}
+
+.active {
+	background-color: #ef5e5e;
+	color: white;
+}
+
+.weather-app__results__icon {
+	height: 6.25rem;
+	width: 6.25rem;
+	background-image: url();
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.weather-app__error {
+	animation: fade-up 1s;
+}
+.weather-app__error img {
+	height: 500px;
+	width: 500px;
 }

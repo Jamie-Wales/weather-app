@@ -14,7 +14,7 @@
             <div class="weather-app__search">
                 <div class="weather-app__heading-logo">
                 <div class="weather-app__logo">
-                    <img src="./img/clear-cloudy.svg" alt="">
+                    <img src="./icons/clear-cloudy.svg" alt="">
                 </div>
                 <div class="weather-app__text">
                     <h1 class="weather-app__main-heading title">Weather Forcast</h1>
@@ -31,9 +31,10 @@
             <div class="weather-app__results__hero">
                 <div class="weather-app__results__hero__text">
                 <h2 class="weather-app__results__place title"></h2>
+                <p class="weather-app__results__country"></p>
                 <p class="weather-app__results__subtitle body--copy"></p>
-                <p class="weather-app__results__country">England</p>
-                <p class="weather-app__results__temp">32°</p>
+                <p class="weather-app__results__temp"></p>
+                <div class="weather-app__results__icon"></div>
             </div>
         </div>
         <div class="weather-app__results__navigation">
@@ -41,7 +42,7 @@
                 <h2 class="weather-app__results__view-type title">Next Seven Days</h2>                
             </div>
             <div class="weather-app__results__temp-type">
-                <div class="weather-app__results__temp-type__C selected">
+                <div class="weather-app__results__temp-type__C active">
                     <p class="weather-app__results__temp-type__copy">°C</p>
                 </div>
                 <div class="weather-app__results__temp-type__F">
@@ -125,6 +126,10 @@
                 <p class="weather-app__results__highlights__quote-of-the-day body--copy">Quote</p>
             </div>
         </div>
+    </div>
+    <div class="weather-app__error hidden">
+        <h2 class="title">Sorry we couldn't find your request please try again</h2>
+        <img src="./img/Dawson-Crying.gif" alt="Dawson crying">    
     </div>
     
 
