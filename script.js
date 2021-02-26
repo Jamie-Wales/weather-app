@@ -82,9 +82,25 @@ function checkActive(event, celc, far) {
     }
 }
 
+
+function generateDate() {
+    const date = new Date;
+    const dateText = document.querySelector('.weather-app__body');
+    dateText.textContent = date.toDateString();
+
+}
+
 button.addEventListener('click', (e) => {
     getWeatherData(search.value)
     search.value = '';
+
+})
+
+document.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        getWeatherData(search.value)
+        search.value = '';
+    }
 
 })
 
@@ -100,4 +116,12 @@ celc.addEventListener('click', (e) => {
     const title = document.querySelector('.weather-app__results__place')
     getWeatherData(title.textContent)
 });
+
+
+window.onload = event => {
+    
+    
+    generateDate();
+
+}
 
