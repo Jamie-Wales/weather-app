@@ -6,13 +6,13 @@ const farin = document.querySelector('.weather-app__results__temp-type__F');
 
 async function getWeatherData(searchterm) {
     if (celc.classList.contains('active')) {
-        const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchterm}&units=metric&appid=fab001dc16d9e80e9c8227142cc821b7`);
-        const weeklyData = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${searchterm}&units=metric&appid=fab001dc16d9e80e9c8227142cc821b7`);
+        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchterm}&units=metric&appid=fab001dc16d9e80e9c8227142cc821b7`);
+        const weeklyData = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${searchterm}&units=metric&appid=fab001dc16d9e80e9c8227142cc821b7`);
         const quoteOfTheDay = await fetch('https://quotes.rest/qod?language=en');
         dataCheck(data, weeklyData, quoteOfTheDay);
     } else {
-        const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchterm}&units=imperial&appid=fab001dc16d9e80e9c8227142cc821b7`);
-        const weeklyData = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${searchterm}&units=imperial&appid=fab001dc16d9e80e9c8227142cc821b7`);
+        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchterm}&units=imperial&appid=fab001dc16d9e80e9c8227142cc821b7`);
+        const weeklyData = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${searchterm}&units=imperial&appid=fab001dc16d9e80e9c8227142cc821b7`);
         const quoteOfTheDay = await fetch('https://quotes.rest/qod?language=en');
         dataCheck(data, weeklyData, quoteOfTheDay);
     }
