@@ -22,6 +22,7 @@ body {
 		rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 	padding: 20px 20px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -41,9 +42,28 @@ body {
 	background-color: #f5f5f5;
 	border: none;
 	border-radius: 20px;
-	max-width: 18.75rem;
+	max-width: 15.75rem;
 	padding: 0.625rem 1rem;
 	font-size: 1.25rem;
+	margin-top: 20px;
+	outline: none;
+}
+
+.weather-app__btn {
+	width: 5rem;
+	height: 2rem;
+	border-radius: 20px;
+	border: 1px solid #ef5e5e;
+	color: #ef5e5e;
+	background-color: white;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.weather-app__btn:hover {
+	transition: all 0.5s;
+	color: white;
+	background-color: #ef5e5e;
 }
 
 .weather-app__logo {
@@ -70,12 +90,13 @@ body {
 	from {
 		opacity: 0;
 		transform: scale(0.5);
-		margin-top: 1000px;
+		transform: translateY(100px);
 	}
 	to {
 		opacity: 1;
 		transform: scale(1);
 		margin-top: 10px;
+		transform: translateY(0);
 	}
 }
 
@@ -83,7 +104,7 @@ body {
 	background-image: url('./img/sunny.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 300px;
+	height: 200px;
 	width: 90%;
 	border-radius: 20px;
 }
@@ -92,8 +113,12 @@ body {
 	background-color: white;
 	border: 2px solid #ef5e5e;
 	border-radius: 20px;
-	width: 25%;
+	width: 40%;
+	padding: 20px;
 	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 }
 
 .weather-app__results__navigation {
@@ -102,7 +127,6 @@ body {
 	justify-content: space-between;
 	align-content: center;
 	justify-items: center;
-
 	margin: 30px 20px;
 }
 
@@ -115,13 +139,16 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 1rem;
 	width: 90%;
 }
 
 .weather-app__results__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	border: 2px solid black;
-	margin: 10px 0;
+	margin: 20px 10px;
 	width: 300px;
 	height: 300px;
 	border-radius: 20px;
@@ -134,7 +161,7 @@ body {
 
 .title {
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	line-height: 4rem;
 }
 
@@ -189,7 +216,8 @@ body {
 	color: white;
 }
 
-.weather-app__results__icon {
+.weather-app__results__icon,
+.weather-app__results__card__icon {
 	height: 6.25rem;
 	width: 6.25rem;
 	background-image: url();
@@ -199,8 +227,60 @@ body {
 
 .weather-app__error {
 	animation: fade-up 1s;
+	position: relative;
+	text-align: center;
 }
 .weather-app__error img {
 	height: 500px;
 	width: 500px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 5rem;
+}
+
+.title--medium {
+	font-size: 2rem;
+}
+
+.body--copy,
+.weather-app__results__card__info {
+	font-size: 1.8rem;
+	color: #7a7a7a;
+}
+
+.weather-app__results__country {
+	font-size: 1.2rem;
+	grid-column: 6;
+	align-self: center;
+	justify-self: center;
+}
+
+.weather-app__results__temp,
+.weather-app__results__card__temp {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.weather-app__results__place,
+.weather-app__results__subtitle {
+	grid-column: 1;
+	align-self: center;
+	margin-left: 20px;
+}
+
+.weather-app__results__temp {
+	grid-column: 4;
+	grid-row: 1;
+	align-self: center;
+	justify-self: center;
+}
+
+.weather-app__results__subtitle {
+	grid-row: 2;
+}
+
+.weather-app__results__icon {
+	grid-column: 6;
+	align-self: center;
+	justify-self: center;
 }
